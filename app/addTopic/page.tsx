@@ -18,7 +18,8 @@ export default function AddTopic() {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/topics", {
+      //const res = await fetch("http://localhost:3000/api/topics", {
+        const res = await fetch("https://todo-app-pasindu.vercel.app/api/topics",{
         method: "POST",
         headers: {
           "Content-type": "application/json",
